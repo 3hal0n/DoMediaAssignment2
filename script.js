@@ -1,5 +1,5 @@
 
-    // Smooth scrolling
+    //This ensures smooth scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', e => {
         e.preventDefault();
@@ -9,7 +9,7 @@
       });
     });
 
-    // Mobile nav toggle
+    //Mobile nav toggle
     const mobileMenu = document.getElementById('mobileMenu');
     const navLinks = document.getElementById('navLinks');
     mobileMenu.addEventListener('click', () => {
@@ -17,13 +17,13 @@
       navLinks.classList.toggle('active');
     });
 
-    // Navbar background on scroll
+    //Navbar background on scroll
     const navbar = document.getElementById('navbar');
     window.addEventListener('scroll', () => {
       navbar.classList.toggle('scrolled', window.scrollY > 50);
     });
 
-    // CTA ripple effect
+    //CTA ripple effect
     document.getElementById('ctaButton').addEventListener('click', function(e) {
       e.preventDefault();
       const ripple = document.createElement('span');
